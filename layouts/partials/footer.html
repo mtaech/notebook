@@ -8,5 +8,10 @@
   {{ .Site.Params.Since }}-{{ now.Format "2006" }}
   {{ .Site.Author.name }} All Rights Resarved.
   <br>
-  <span class="icp">{{.Site.Icp.No}}</span>
+  <span class="icp">
+              <a target="_blank"
+                 href="https://beian.miit.gov.cn/">
+                {{ .Site.Params.Icp }}
+              </a>
+    </span>
 </p>
